@@ -78,17 +78,17 @@ With var you have a function scope, and only one shared binding for all of your 
 
 With let you have a block scope and when used in the for loop you get a new binding for each iteration - i.e. the i in every setTimeout callback means a different variable, each of which has a different value: the first one is 0, the next one is 1 etc.
 ```js
-(function timer() {
-  for (var i=0; i<=5; i++) {
-    setTimeout(() =>{console.log(i)}, 1000);
-  }
-})(); // this logs 6 six times.
+for (var i=0; i<3;i++){
+  setTimeout(()=>{
+    console.log(i)
+  },1000)
+} // this logs 3 three times.
 
-(function timer() {
-  for (let i=0; i<=5; i++) {
-    setTimeout(() =>{console.log(i)}, 1000);
-  }
-})(); // this logs 0,1,2,3,4,5 
+for (let i=0; i<3;i++){
+  setTimeout(()=>{
+    console.log(i)
+  },1000)
+}// this logs 0,1,2 
 ```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
