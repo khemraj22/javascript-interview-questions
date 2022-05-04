@@ -3,11 +3,10 @@ javascript questions and answers
 
 <br/>
 
-| Sl.No|  Questions       |
+| Sr.No|  Questions       |
 |------|------------------|
-| 01. |[What does the runtime environment mean in Node.js?](#q-what-does-the-runtime-environment-mean-in-nodejs)|
-| 02. |[What is Node.js?](#q-what-is-nodejs)|
-| 03. |[What are the benefits of using Node.js?](#q-what-are-the-benefits-of-using-nodejs)|
+| 01. |[What is Node.js?](#q-what-is-nodejs)|
+| 02. |[What are the benefits of using Node.js?](#q-what-are-the-benefits-of-using-nodejs)|
 
 <br/>
 
