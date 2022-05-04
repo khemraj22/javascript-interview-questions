@@ -53,7 +53,7 @@ From a web server development perspective Node has a number of benefits:
 </div>
 
 ## Q. ***Create hello world app?***
-
+```js
 const express = require('express')
 
 const app = express()
@@ -67,7 +67,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
-
+```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
@@ -77,7 +77,7 @@ app.listen(port, () => {
 With var you have a function scope, and only one shared binding for all of your loop iterations - i.e. the i in every setTimeout callback means the same variable that finally is equal to 6 after the loop iteration ends.
 
 With let you have a block scope and when used in the for loop you get a new binding for each iteration - i.e. the i in every setTimeout callback means a different variable, each of which has a different value: the first one is 0, the next one is 1 etc.
-
+```js
 (function timer() {
   for (var i=0; i<=5; i++) {
     setTimeout(function clog() {console.log(i)}, i*1000);
@@ -89,7 +89,7 @@ With let you have a block scope and when used in the for loop you get a new bind
     setTimeout(function clog() {console.log(i)}, i*1000);
   }
 })(); // this logs 0,1,2,3,4,5 
-
+```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
