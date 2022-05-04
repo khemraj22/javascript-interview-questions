@@ -80,13 +80,13 @@ With let you have a block scope and when used in the for loop you get a new bind
 ```js
 (function timer() {
   for (var i=0; i<=5; i++) {
-    setTimeout(function clog() {console.log(i)}, i*1000);
+    setTimeout(() =>{console.log(i)}, 1000);
   }
 })(); // this logs 6 six times.
 
 (function timer() {
   for (let i=0; i<=5; i++) {
-    setTimeout(function clog() {console.log(i)}, i*1000);
+    setTimeout(() =>{console.log(i)}, 1000);
   }
 })(); // this logs 0,1,2,3,4,5 
 ```
