@@ -52,9 +52,12 @@ From a web server development perspective Node has a number of benefits:
     <b><a href="#">↥ back to top</a></b>
 </div>
 
-## Q. ***Create Hello world app ***
+## Q. ***Create hello world app ***
+
 const express = require('express')
+
 const app = express()
+
 const port = 3000
 
 app.get('/', (req, res) => {
