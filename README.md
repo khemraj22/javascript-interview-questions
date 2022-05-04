@@ -89,6 +89,14 @@ for (let i=0; i<3;i++){
     console.log(i)
   },1000)
 }// this logs 0,1,2 
+
+let j;
+for (j = 0; j < 3; j++) {
+  const log = () => {
+    console.log(j);
+  }
+  setTimeout(log, 100); // 3,3,3
+}
 ```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
