@@ -30,7 +30,7 @@ javascript questions and answers
 | 24. |[What is promise all?](#q-what-is-promise-all)|
 | 25. |[What is promise race method?](#q-what-is-promise-race-method)|
 | 26. |[What if throw new Error in promise, is it resolved or reject?](#q-what-if-throw-new-error-in-promise-is-it-resolved-or-rejected)|
-| 27. |[How to call 10 promises in loop?](#q-how-to-call-10-promises-in-loop)|
+| 27. |[How to call five promises in loop sequentially?](#q-how-to-call-five-promises-in-loop-sequentially)|
 | 28. |[How to complete promises if one promise fails?](#q-how-to-complete-promises-if-one-promise-fails)|
 | 29. |[What is prop drilling in reactjs?](#q-what-is-prop-drilling-in-reactjs)|
 | 30. |[What is hoc in reactjs?](#q-what-is-hoc-in-reactjs)|
@@ -112,6 +112,54 @@ for (j = 0; j < 3; j++) {
   }
   setTimeout(log, 100); // 3,3,3
 }
+```
+<div align="right">
+    <b><a href="#">↥ back to top</a></b>
+</div>
+
+## Q. ***How to call five promises in loop sequentially?***
+
+With var you have a function scope, and only one shared binding for all of your loop iterations - i.e. the i in every setTimeout callback means the same variable that finally is equal to 6 after the loop iteration ends.
+
+With let you have a block scope and when used in the for loop you get a new binding for each iteration - i.e. the i in every setTimeout callback means a different variable, each of which has a different value: the first one is 0, the next one is 1 etc.
+```js
+
+const delays = [1000, 2000, 5000, 3000, 500, 12000];
+const startTime = Date.now();
+
+const delay = (timeDelay) => {
+    console.log(`Waiting: ${timeDelay / 1000} seconds.`);
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(timeDelay)
+        }, timeDelay)
+    })
+}
+
+// solution 1
+(async () => {
+    for await (const d of delays) {
+        await delay(d).then(sec => {
+            console.log(`Waited: ${sec / 1000} seconds\n`);
+        })
+    }
+})()
+
+// solution 2: recursive
+const doNextPromise = (d) => {
+    delay(delays[d]).then(sec => {
+        console.log(`Waited: ${sec / 1000} seconds\n`);
+        d++;
+
+        if (d < delays.length) {
+            doNextPromise(d)
+        } else {
+            console.log(`Total: ${(Date.now() - startTime) / 1000} seconds.`);
+        }
+    })
+}
+
+// doNextPromise(0)
 ```
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
