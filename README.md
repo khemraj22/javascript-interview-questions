@@ -17,9 +17,21 @@ javascript questions and answers
 | 10. |[What is assert?](#q-what-is-assert)|
 | 11. |[How do you debug nodejs app?](#q-how-do-you-debug-nodejs-app)|
 | 12. |[What is difference between var and let?](#q-what-is-difference-between-var-let)|
-| 13. |[Create hello world app?](#q-create-hello-world-app)|
-| 13. |[How to compare two nodes?](#q-how-to-compare-two-nodes)|
-| 13. |[Why let and var bindings behave differently using setTimeout function?](#q-Why-let-and-var-bindings-behave-differently-using-setTimeout-function)|
+| 14. |[Create hello world app?](#q-create-hello-world-app)|
+| 15. |[How to compare two nodejs?](#q-how-to-compare-two-nodejs)|
+| 16. |[Why let and var bindings behave differently using setTimeout function?](#q-Why-let-and-var-bindings-behave-differently-using-setTimeout-function)|
+| 17. |[What is event loop in nodejs?](#q-what-is-event-loop-in-nodejs)|
+| 18. |[What is middleware?](#q-what-is-middleware)|
+| 19. |[What is features of ES6?](#q-what-is-features-of-es6)|
+| 20. |[What is use-strict?](#q-what-is-use-strict)|
+| 21. |[What is object destructuring?](#q-what-is-destructuring)|
+| 22. |[Does alias is supported in object destructuring?](#q-does-alias-is-supported-in-object-destructuring)|
+| 23. |[What is promises?](#q-what-is-promises)|
+| 24. |[What is promise all?](#q-what-is-promise-all)|
+| 25. |[What is promise race method?](#q-what-is-promise-race-method)|
+| 26. |[What if throw new Error in promise, is it resolved or reject?](#q-what-if-throw-new-error-in-promise-is-it-resolved-or-rejected)|
+| 27. |[How to call 10 promises in loop?](#q-how-to-call-10-promises-in-loop)|
+| 28. |[How to complete promises if one promise fails?](#q-how-to-complete-promises-if-one-promise-fails)|
 <br/>
 
 
