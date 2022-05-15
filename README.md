@@ -119,9 +119,6 @@ for (j = 0; j < 3; j++) {
 
 ## Q. ***How to call five promises in loop sequentially?***
 
-With var you have a function scope, and only one shared binding for all of your loop iterations - i.e. the i in every setTimeout callback means the same variable that finally is equal to 6 after the loop iteration ends.
-
-With let you have a block scope and when used in the for loop you get a new binding for each iteration - i.e. the i in every setTimeout callback means a different variable, each of which has a different value: the first one is 0, the next one is 1 etc.
 ```js
 
 const delays = [1000, 2000, 5000, 3000, 500, 12000];
