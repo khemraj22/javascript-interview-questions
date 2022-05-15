@@ -32,6 +32,9 @@ javascript questions and answers
 | 26. |[What if throw new Error in promise, is it resolved or reject?](#q-what-if-throw-new-error-in-promise-is-it-resolved-or-rejected)|
 | 27. |[How to call 10 promises in loop?](#q-how-to-call-10-promises-in-loop)|
 | 28. |[How to complete promises if one promise fails?](#q-how-to-complete-promises-if-one-promise-fails)|
+| 29. |[What is prop drilling in reactjs?](#q-what-is-prop-drilling-in-reactjs)|
+| 30. |[What is hoc in reactjs?](#q-what-is-hoc-in-reactjs)|
+| 31. |[What is pure component in reactjs?](#q-what-is-pure-component-in-react-js)|
 <br/>
 
 
