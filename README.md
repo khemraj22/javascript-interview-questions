@@ -164,7 +164,7 @@ const doNextPromise = (d) => {
 </div>
 
 ## Q. ***What is the difference between package and library?***
-```
+
 A **module** is a set of functions, types, classes, ... put together in a common namespace.
 
 A **library** is a set of modules which makes sense to be together and that can be used in a program or another library.
@@ -172,7 +172,7 @@ A **library** is a set of modules which makes sense to be together and that can 
 A **package** is a unit of distribution that can contain a library or an executable or both. It's a way to share your code with the community.
 
 Note that a library doesn't have to be in isolation in a package. That is, it's perfectly acceptable to have a library in your project that is used inside this project. The code is therefore seperated from the rest for clarity and maintainability. This is also a good way to isolate some general-purpose from your business logic code and this lib could eventually be extracted and shared between projects or with the community if needed.
-```
+
 <div align="right">
     <b><a href="#">↥ back to top</a></b>
 </div>
