@@ -36,6 +36,12 @@ javascript questions and answers
 | 30. |[What is hoc in reactjs?](#q-what-is-hoc-in-reactjs)|
 | 31. |[What is pure component in reactjs?](#q-what-is-pure-component-in-react-js)|
 | 32. |[What is the difference between package and library?](#q-what-is-the-difference-between-package-and-library)|
+| 33. |[How to clear local storage at once?](#q-how-to-clear-local-storage-at-once)|
+| 33. |[How to make object immutable?](#q-how-to-make-object-immutable)|
+| 33. |[What is the difference between Object.seal and Object.freeze?](#q-what-is-the-difference-between-object-seal-and-object-freeze)|
+| 33. |[Why to use object create method?](#q-why-to-use-object-create-method)|
+| 33. |[What is forward ref in reactjs?](#q-what-is-forward-ref-in-reactjs)|
+| 33. |[What is difference between paragraph tag and span tag?](#q-what-is-difference-between-paragraph-tag-and-span-tag)|
 <br/>
 
 
